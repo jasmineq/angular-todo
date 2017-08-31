@@ -7,12 +7,12 @@
 
  */
 
-app.controller("addTaskCtrl", function($scope, todoFactory){
+app.controller("addTaskCtrl", function($scope, todoFactory) {
 
-    const submitTask = function(){
+  const submitTask = function() {
 
-    }
+  };
 
-    
+
 
 });

@@ -7,22 +7,31 @@
 
  */
 
-app.controller("listCtrl", function($scope, todoFactory, userFactory){
+ //$scope is like require but its called injecting
 
-    
-    const showAllTasks = function(){
+app.controller("listCtrl", function($scope, todoFactory, userFactory) {
 
-    }
+    $scope.tasks = [];
 
-    
-    const deleteTask = function(){
+    const showAllTasks = function() {
+        console.log("showAllTasks");
+        todoFactory.getAllTasks()
+        .then((tasks) => {
+            console.log("showAllTasks from promise", tasks);
+            $scope.tasks = tasks;
+        });
+    };
 
-    }
 
-    
-    const toggleDoneTask = function(){
+    const deleteTask = function() {
 
-    }
+    };
 
+
+    const toggleDoneTask = function() {
+
+    };
+
+    showAllTasks();
 
 });

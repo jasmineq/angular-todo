@@ -6,37 +6,39 @@
 
  */
 
-app.factory("userFactory", function($q, $http){
+app.factory("userFactory", function($q, $http) {
 
-    let currentUser = null;
-
-
-    const getCurrentUser = function(){
-
-    }
+  let currentUser = null;
 
 
-    const loginGoogle = function(){
+  const getCurrentUser = function() {
 
-    }
-
-
-    const logIn = function(){
-
-    }
+  };
 
 
-    const logOut = function(){
+  const loginGoogle = function() {
 
-    }
+  };
 
 
-    const register = function(){
+  const logIn = function() {
 
-    }
+  };
 
-    const isAuthenticated = function(){
 
-    }
+  const logOut = function() {
+
+  };
+
+
+  const register = function() {
+
+  };
+
+  const isAuthenticated = function() {
+
+  };
+
+  return {getCurrentUser, loginGoogle, logIn, logOut, register, isAuthenticated};
 
 });
